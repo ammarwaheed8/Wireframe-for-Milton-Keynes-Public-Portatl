@@ -1,0 +1,159 @@
+  /* Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #c9c9c9;
+    margin: -10px -10px 0 -10px;
+}
+
+#logo {
+    width: 45px;
+    height: 44px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #282828;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #c9c9c9;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #282828;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+    background-color: #404340;
+    font-weight: bold;
+}
+
+.btn-login a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-option {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-option p {
+    font-size: 14px;
+    color: #282828;
+}
+
+.signup-option a {
+    color: #404340;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-option a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    padding: 10px 0;
+    color: #a1a1a1;
+    border-top: 1px solid #c9c9c9;
+    text-align: center;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        text-align: left;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    #logo {
+        margin: 10px;
+    }
+
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        padding: 8px;
+    }
+
+    footer > p {
+        font-size: 12px;
+    }
+}
