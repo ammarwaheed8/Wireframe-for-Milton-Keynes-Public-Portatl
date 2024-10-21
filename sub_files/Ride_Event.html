@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Event Booking</title>
+    <link rel="stylesheet" href="CSS/Ride_Event.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="img/imageSquare.jpg" alt="OU Cycling Club Logo" id="logo">
+            <h1>Ride Event Booking</h1>
+        </div>
+    </header>
+    <main>
+        <a class="sign-up-button" href="Club_Annoucement.html">Announcement</a>
+        <a class="sign-up-button" href="Club_New_Signup.html">Sign Up</a>
+        <!-- Ride Event Form Section -->
+        <section id="ride-event-form-section" class="ride-event-form">
+            <h2>Ride Event Form</h2>
+            <form id="rideEventForm">
+                <label for="rideName">Name of Ride:</label>
+                <input type="text" id="rideName" name="rideName" required>
+
+                <label for="rideType">Type of Ride:</label>
+                <input type="text" id="rideType" name="rideType" required>
+
+                <label for="rideDate">Date of Ride:</label>
+                <input type="date" id="rideDate" name="rideDate" required>
+
+                <label for="startTime">Start Time:</label>
+                <input type="time" id="startTime" name="startTime" required>
+
+                <label for="duration">Duration:</label>
+                <input type="text" id="duration" name="duration" required>
+
+                <label for="meetingPoint">Meeting Point:</label>
+                <input type="text" id="meetingPoint" name="meetingPoint" required>
+
+                <label for="distance">Distance in KM:</label>
+                <input type="number" id="distance" name="distance" required>
+
+                <label for="elevation">Elevation in m:</label>
+                <input type="number" id="elevation" name="elevation" required>
+
+                <label for="maxGroupSize">Maximum group size:</label>
+                <input type="number" id="maxGroupSize" name="maxGroupSize" required>
+
+                <label for="leaderName">Name of Leader:</label>
+                <input type="text" id="leaderName" name="leaderName" required>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="text" id="contactNumber" name="contactNumber" required pattern="\d{10}" title="Please enter a valid 10-digit phone number">
+
+                <label for="altContactNumber">Alternative Contact Number:</label>
+                <input type="text" id="altContactNumber" name="altContactNumber" required pattern="\d{10}" title="Please enter a valid 10-digit phone number">
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Booked Rides Details Section -->
+        <section id="booked-rides-section" class="booked-rides">
+            <h2>Booked Rides Details</h2>
+            <div class="ride-details">
+                <h3>Morning Ride</h3>
+                <p><strong>Type of Ride:</strong> Road</p>
+                <p><strong>Date of Ride:</strong> 2024-06-01</p>
+                <p><strong>Start Time:</strong> 06:00</p>
+                <p><strong>Duration:</strong> 2 hours</p>
+                <p><strong>Meeting Point:</strong> Central Park</p>
+                <p><strong>Distance in KM:</strong> 40</p>
+                <p><strong>Elevation in m:</strong> 300</p>
+                <p><strong>Maximum Group Size:</strong> 10</p>
+                <p><strong>Leader:</strong> John Doe</p>
+                <p><strong>Contact Number:</strong> 1234567890</p>
+                <p><strong>Alternative Contact Number:</strong> 0987654321</p>
+                <p><strong>Comments:</strong> Bring water and snacks.</p>
+                <p><strong>Status:</strong> Active</p>
+            </div>
+            <div class="ride-details">
+                <h3>Morning Ride</h3>
+                <p><strong>Type of Ride:</strong> Road</p>
+                <p><strong>Date of Ride:</strong> 2024-06-01</p>
+                <p><strong>Start Time:</strong> 06:00</p>
+                <p><strong>Duration:</strong> 2 hours</p>
+                <p><strong>Meeting Point:</strong> Central Park</p>
+                <p><strong>Distance in KM:</strong> 40</p>
+                <p><strong>Elevation in m:</strong> 300</p>
+                <p><strong>Maximum Group Size:</strong> 10</p>
+                <p><strong>Leader:</strong> John Doe</p>
+                <p><strong>Contact Number:</strong> 1234567890</p>
+                <p><strong>Alternative Contact Number:</strong> 0987654321</p>
+                <p><strong>Comments:</strong> Bring water and snacks.</p>
+                <p><strong>Status:</strong> Active</p>
+            </div>
+            <div class="ride-details">
+                <h3>Evening Ride</h3>
+                <p><strong>Type of Ride:</strong> Road</p>
+                <p><strong>Date of Ride:</strong> 2024-06-01</p>
+                <p><strong>Start Time:</strong> 06:00</p>
+                <p><strong>Duration:</strong> 2 hours</p>
+                <p><strong>Meeting Point:</strong> Central Park</p>
+                <p><strong>Distance in KM:</strong> 40</p>
+                <p><strong>Elevation in m:</strong> 300</p>
+                <p><strong>Maximum Group Size:</strong> 10</p>
+                <p><strong>Leader:</strong> John Doe</p>
+                <p><strong>Contact Number:</strong> 1234567890</p>
+                <p><strong>Alternative Contact Number:</strong> 0987654321</p>
+                <p><strong>Comments:</strong> Bring water and snacks.</p>
+                <p><strong>Status:</strong> Active</p>
+            </div>
+            <div class="ride-details">
+                <h3>Afternoon Ride</h3>
+                <p><strong>Type of Ride:</strong> Road</p>
+                <p><strong>Date of Ride:</strong> 2024-06-01</p>
+                <p><strong>Start Time:</strong> 06:00</p>
+                <p><strong>Duration:</strong> 2 hours</p>
+                <p><strong>Meeting Point:</strong> Central Park</p>
+                <p><strong>Distance in KM:</strong> 40</p>
+                <p><strong>Elevation in m:</strong> 300</p>
+                <p><strong>Maximum Group Size:</strong> 10</p>
+                <p><strong>Leader:</strong> John Doe</p>
+                <p><strong>Contact Number:</strong> 1234567890</p>
+                <p><strong>Alternative Contact Number:</strong> 0987654321</p>
+                <p><strong>Comments:</strong> Bring water and snacks.</p>
+                <p><strong>Status:</strong> Active</p>
+            </div>
+            <!-- Add more static ride details as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 OU Cycling Club - All rights reserved.</p>
+    </footer>
+</body>
+</html>

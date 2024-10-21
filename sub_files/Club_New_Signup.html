@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - OU Club Member</title>
+    <link rel="stylesheet" href="CSS/Club_New_Signup.css">
+</head>
+<body>
+    <header>
+        <img src="img/imageSquare.jpg" alt="OU Cycling Club Logo" id="logo">
+        <h1>Welcome New Members</h1>
+    </header>
+    <main>
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form id="signupForm" method="post">
+                <label for="forename">Forename:</label>
+                <input type="text" id="forename" name="forename" required>
+
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="address">Home Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="emergencyContactName">Emergency Contact Name:</label>
+                <input type="text" id="emergencyContactName" name="emergencyContactName" required>
+
+                <label for="emergencyContactNumber">Emergency Contact Number:</label>
+                <input type="text" id="emergencyContactNumber" name="emergencyContactNumber" required>
+
+                <label for="password">Set Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="membershipOptions">Membership Options:</label>
+                <select id="membershipOptions" name="membershipOptions" required>
+                    <option value="standard">Standard</option>
+                    <option value="student">Student</option>
+                    <option value="senior">Senior</option>
+                </select>
+
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="card">Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cash">Cash</option>
+                </select>
+
+                <div class="renewal-container">
+                    <input type="checkbox" id="automaticRenewal" name="automaticRenewal">
+                    <label for="automaticRenewal">Automatic Membership Renewal</label>
+                </div>
+
+                <div class="email-container">
+                    <input type="checkbox" id="emailAnnouncements" name="emailAnnouncements">
+                    <label for="emailAnnouncements">Receive Announcements Emails</label>
+                </div>
+
+                <div class="terms-container">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I accept the <a href="#">terms and conditions</a></label>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 OU Cycling Club - All rights reserved.</p>
+    </footer>
+</body>
+</html>

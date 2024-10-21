@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+      <link rel="stylesheet" href="CSS/Admin_Area.css">
+</head>
+<body>
+    <header>
+        <img src="img/imageSquare.jpg" alt="logo" id="logo">
+        <h1>Admin Dashboard</h1>
+        <input type="text" placeholder="Search...">
+    </header>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <nav>
+        <ul>
+            <li><a href="#section1">Dashboard</a></li>
+            <li><a href="#section2">Member Management</a></li>
+            <li><a href="#section3">News Management</a></li>
+            <li><a href="#section4">Announcement</a></li>
+            <li><a href="#section5">Members Query</a></li>
+        </ul>
+    </nav>
+    <main>
+      <section id="section1">
+        <h2>Dashboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Event Details</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                    <th>Payment Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Event A Details</td>
+                    <td class="status">Accepted</td>
+                    <td class="action-buttons">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </td>
+                    <td>Paid</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Event B Details</td>
+                    <td class="status">Accepted</td>
+                    <td class="action-buttons">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </td>
+                    <td>Paid</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Event A Details</td>
+                    <td class="status">Pending</td>
+                    <td class="action-buttons">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </td>
+                    <td>Unpaid</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Event B Details</td>
+                    <td class="status">Pending</td>
+                    <td class="action-buttons">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </td>
+                    <td>Unpaid</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Event A Details</td>
+                    <td class="status">Accepted</td>
+                    <td class="action-buttons">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </td>
+                    <td>Paid</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Event B Details</td>
+                    <td class="status">Pending</td>
+                    <td class="action-buttons">
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </td>
+                    <td>Unpaid</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  
+    <section id="section2">
+      <h2>Member Management</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Joining Date</th>
+            <th>Status</th>
+            <th>Action</th>
+            <th>Edit Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">John Doe</td>
+            <td class="joining-date">2022-01-15</td>
+            <td class="status">Active</td>
+            <td class="action-buttons">
+              <button class="active">Active</button>
+              <button class="inactive">Inactive</button>
+            </td>
+            <td class="edit-button">
+              <button class="edit">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="name">John Doe</td>
+            <td class="joining-date">2022-01-15</td>
+            <td class="status">Active</td>
+            <td class="action-buttons">
+              <button class="active">Active</button>
+              <button class="inactive">Inactive</button>
+            </td>
+            <td class="edit-button">
+              <button class="edit">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="name">John Doe</td>
+            <td class="joining-date">2022-01-15</td>
+            <td class="status">Active</td>
+            <td class="action-buttons">
+              <button class="active">Active</button>
+              <button class="inactive">Inactive</button>
+            </td>
+            <td class="edit-button">
+              <button class="edit">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="name">John Doe</td>
+            <td class="joining-date">2022-01-15</td>
+            <td class="status">Active</td>
+            <td class="action-buttons">
+              <button class="active">Active</button>
+              <button class="inactive">Inactive</button>
+            </td>
+            <td class="edit-button">
+              <button class="edit">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="name">John Doe</td>
+            <td class="joining-date">2022-01-15</td>
+            <td class="status">Active</td>
+            <td class="action-buttons">
+              <button class="active">Active</button>
+              <button class="inactive">Inactive</button>
+            </td>
+            <td class="edit-button">
+              <button class="edit">Edit</button>
+            </td>
+          </tr>
+          <!-- Repeat similar rows as needed -->
+        </tbody>
+      </table>
+    </section>
+  
+        <section id="section3">
+          <h2>Add News</h2>
+          <div class="form-container">
+              <form id="addNewsForm">
+                  <label for="newsTitle">News Title (max 5 words):</label>
+                  <input type="text" id="newsTitle" name="newsTitle" maxlength="30" required>
+
+                  <label for="newsDetails">News Details (max 200 words):</label>
+                  <textarea id="newsDetails" name="newsDetails" rows="5" maxlength="1000" required></textarea>
+
+                  <label for="adminName">Admin Name:</label>
+                  <input type="text" id="adminName" name="adminName" required>
+
+                  <label for="attachment">Attachment:</label>
+                  <input type="file" id="attachment" name="attachment">
+
+                  <label for="publishDate">Publish Date:</label>
+                  <input type="date" id="publishDate" name="publishDate" required>
+
+                  <div id="hide-new-check">
+                      <label for="hideNews">Hide News:</label>
+                      <input type="checkbox" id="hideNews" name="hideNews">
+                  </div>
+
+                  <button type="submit" id="btn-publish">Publish</button>
+              </form>
+          </div>
+          <h2>News Wall</h2>
+          <div class="news-wall" id="newsWall">
+          </div>
+      </section>
+  
+      <section id="section4">
+        <h2>Announcement</h2>
+        <form id="emailAnnouncementForm" action="send_email.php" method="POST" enctype="multipart/form-data">
+          <label for="subject">Subject (max 5 words):</label>
+          <input type="text" id="subject" name="subject" maxlength="30" required><br>
+        
+          <label for="senderName">Sender Name:</label>
+          <input type="text" id="senderName" name="senderName" required><br>
+        
+          <label for="receiverName">Receiver Name:</label>
+          <input type="text" id="receiverName" name="receiverName" required><br>
+        
+          <label for="attachment">Attachment:</label>
+          <input type="file" id="attachment" name="attachment"><br>
+        
+          <label for="priority">Priority:</label>
+          <select id="priority" name="priority" required>
+            <option value="High">High</option>
+            <option value="Normal">Normal</option>
+            <option value="Low">Low</option>
+          </select><br>
+        
+          <label for="content">Email Content:</label><br>
+          <textarea id="content" name="content" rows="5" maxlength="1000" required></textarea><br>
+        
+          <button type="submit">Send Email</button>
+        </form>
+        <h2 id="announcement-mailbox-h2">Announcement Mailbox</h2>
+        <div class="announcement-mailbox" id="announcementMailbox">
+        </div>
+      </section>
+
+      <section id="section5">
+        <h2>Announcement Approval</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Member Name</th>
+                    <th>Announcement</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>This is Announcement 1</td>
+                    <td class="action-buttons">
+                        <button class="accept">Approve</button>
+                        <button class="decline">Reject</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>This is Announcement 2</td>
+                    <td class="action-buttons">
+                        <button class="accept">Approve</button>
+                        <button class="decline">Reject</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>This is Announcement 3</td>
+                    <td class="action-buttons">
+                        <button class="accept">Approve</button>
+                        <button class="decline">Reject</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>This is Announcement 4</td>
+                    <td class="action-buttons">
+                        <button class="accept">Approve</button>
+                        <button class="decline">Reject</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>This is Announcement 5</td>
+                    <td class="action-buttons">
+                        <button class="accept">Approve</button>
+                        <button class="decline">Reject</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+      </main>
+    <footer>
+        <p>&copy; 2024 OU Cycling Club - All rights reserved.</p>
+    </footer>
+    <script>
+/* JS Part for Dashboard Functionality */
+      document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.action-buttons .accept').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const row = button.closest('tr');
+                    const statusCell = row.querySelector('.status');
+                    statusCell.textContent = 'Accepted';
+                });
+            });
+
+            document.querySelectorAll('.action-buttons .decline').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const row = button.closest('tr');
+                    const statusCell = row.querySelector('.status');
+                    statusCell.textContent = 'Pending';
+                });
+            });
+        });
+
+
+     
+/* JS Part for Member Management Functionality */       
+document.addEventListener('DOMContentLoaded', function() {
+  const table = document.querySelector('#section2 table');
+  table.addEventListener('click', function(event) {
+    const target = event.target;
+    
+    if (target.classList.contains('active') || target.classList.contains('inactive')) {
+      const statusCell = target.closest('tr').querySelector('.status');
+      statusCell.textContent = target.classList.contains('active') ? 'Active' : 'Inactive';
+    }
+    
+    if (target.classList.contains('edit')) {
+      const row = target.closest('tr');
+      const nameCell = row.querySelector('.name');
+      const joiningDateCell = row.querySelector('.joining-date');
+      
+      if (!nameCell.isContentEditable) {
+        nameCell.contentEditable = true;
+        joiningDateCell.contentEditable = true;
+        nameCell.classList.add('editable');
+        joiningDateCell.classList.add('editable');
+        target.textContent = 'Save';
+      } else {
+        nameCell.contentEditable = false;
+        joiningDateCell.contentEditable = false;
+        nameCell.classList.remove('editable');
+        joiningDateCell.classList.remove('editable');
+        target.textContent = 'Edit';
+      }
+    }
+  });
+});
+
+/* JS Portion for News Management */
+document.getElementById('addNewsForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  // Get form values
+  const title = document.getElementById('newsTitle').value;
+  const details = document.getElementById('newsDetails').value;
+  const adminName = document.getElementById('adminName').value;
+  const publishDate = document.getElementById('publishDate').value;
+  const hideNews = document.getElementById('hideNews').checked;
+  const attachment = document.getElementById('attachment').files[0];
+  
+  // Create a new news item
+  const newsWall = document.getElementById('newsWall');
+  const newsItem = document.createElement('div');
+  newsItem.classList.add('news-item');
+  
+  // Set news item content
+  if (attachment) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const img = document.createElement('img');
+      img.src = e.target.result;
+      newsItem.appendChild(img);
+    };
+    reader.readAsDataURL(attachment);
+  }
+  
+  const h3 = document.createElement('h3');
+  h3.textContent = title;
+  newsItem.appendChild(h3);
+  
+          const p = document.createElement('p');
+          p.textContent = details;
+          newsItem.appendChild(p);
+          p.classList.add('added-p')
+          
+          const span = document.createElement('span');
+          span.textContent = `Admin: ${adminName} | Publish Date: ${publishDate}`;
+          newsItem.appendChild(span);
+          
+          if (!hideNews) {
+            newsWall.appendChild(newsItem);
+          }
+          
+          // Clear the form
+          document.getElementById('addNewsForm').reset();
+        });
+
+
+/* JS Part for Announcement Functionality */
+document.getElementById('emailAnnouncementForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Get form values
+        const subject = document.getElementById('subject').value;
+        const senderName = document.getElementById('senderName').value;
+        const receiverName = document.getElementById('receiverName').value;
+        const attachment = document.getElementById('attachment').files[0];
+        const priority = document.getElementById('priority').value;
+        const content = document.getElementById('content').value;
+
+        // Create a new announcement item
+        const announcementMailbox = document.getElementById('announcementMailbox');
+        const announcementItem = document.createElement('div');
+        announcementItem.classList.add('announcement-item');
+
+        // Set announcement item content
+        const h3 = document.createElement('h3');
+        h3.textContent = `Subject: ${subject}`;
+        announcementItem.appendChild(h3);
+        h3.classList.add('added-h3')
+
+        const p = document.createElement('p');
+        p.textContent = `From: ${senderName} | To: ${receiverName}`;
+        announcementItem.appendChild(p);
+        p.classList.add('added-p')
+
+        if (attachment) {
+          const span = document.createElement('span');
+          span.textContent = `Attachment: ${attachment.name}`;
+          announcementItem.appendChild(span);
+          span.classList.add('added-span')
+        }
+
+        const prioritySpan = document.createElement('span');
+        prioritySpan.textContent = `Priority: ${priority}`;
+        announcementItem.appendChild(prioritySpan);
+        prioritySpan.classList.add('added-prioritySpan')
+
+        const contentP = document.createElement('p');
+        contentP.textContent = content;
+        announcementItem.appendChild(contentP);
+        contentP.classList.add('added-contentP')
+
+        announcementMailbox.appendChild(announcementItem);
+
+// This is the JS Functionality for Announcement Approval and Rejection.
+
+// Clear the form
+        document.getElementById('emailAnnouncementForm').reset();
+      });       
+        </script>
+</body>
+</html>
